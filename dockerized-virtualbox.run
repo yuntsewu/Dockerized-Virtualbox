@@ -6,4 +6,4 @@ docker run -ti --rm \
 -e DISPLAY=$DISPLAY \
 -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
 --privileged=true \
-windsor106/dockerized-virtualbox virtualbox
+windsor106/dockerized-virtualbox
