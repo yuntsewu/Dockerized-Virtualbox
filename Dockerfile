@@ -1,7 +1,7 @@
 FROM debian
 MAINTAINER Yun Tse Wu <windsor106@gmail.com>
 
-RUN adduser --disabled-password --quiet --gecos '' virtualbox
+#RUN adduser --disabled-password --quiet --gecos '' virtualbox
 RUN apt-get update && apt-get install -y \
   ca-certificates \
   curl \
@@ -13,6 +13,5 @@ RUN apt-get update && apt-get install -y \
   apt-get install -y \
   virtualbox-5.0 \
   && rm -rf /var/lib/apt/lists/*
-USER virtualbox
+#USER virtualbox
 ENTRYPOINT	[ "/usr/bin/virtualbox" ]
-
