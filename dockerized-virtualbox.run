@@ -1,9 +1,9 @@
 mkdir ~/vm
 xhost +
 docker run -ti --rm \
+-v /tmp/.X11-unix:/tmp/.X11-unix\
+-v ~/vm/:/root/VirtualBox\ VMs/ \
+-e DISPLAY=unix$DISPLAY \
+--privileged \
 --name=dockerized-virtualbox \
--v ~/vm/:/home/virtualbox/vm/ \
--e DISPLAY=$DISPLAY \
--v /tmp/.X11-unix:/tmp/.X11-unix:ro \
---privileged=true \
 windsor106/dockerized-virtualbox
