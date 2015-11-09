@@ -11,5 +11,4 @@ RUN apt-get update && apt-get install -y \
   apt-get install -y \
   virtualbox-5.0 \
   && rm -rf /var/lib/apt/lists/*
-
-ENTRYPOINT	[ "/usr/bin/virtualbox" ]
+#ENTRYPOINT	[ "/usr/bin/virtualbox" ]
