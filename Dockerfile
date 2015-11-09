@@ -6,8 +6,5 @@ RUN apt-get update && apt-get install -y \
 	virtualbox
 RUN adduser --disabled-password --quiet --gecos '' virtualbox
 RUN service virtualbox start 
-
 USER virtualbox
-
 CMD [virtualbox]
-
